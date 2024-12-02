@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { View, Text } from "react-native";
 import NetInfo from "@react-native-community/netinfo";
 
+import Offline from "@screens/Offline";
+import Home from "@screens/Home";
+
 const App = () => {
   const [isConnected, setIsConnected] = useState(true);
 
@@ -15,23 +18,19 @@ const App = () => {
     };
   }, []);
 
-  if (!isConnected) {
-    return (
-      <View className="flex-1 justify-center items-center bg-gray-100">
-        <Text className="text-center text-lg text-red-500">
-          You are offline. Please check your internet connection.
-        </Text>
-      </View>
-    );
-  }
 
   return (
-    <View className="flex-1 justify-center items-center bg-gray-50">
-      <Text className="text-2xl font-bold text-green-600">
-        Welcome to George Barbu CV
-      </Text>
+    <View className="flex-1 justify-center">
+      {isConnected ? (
+        <View className="flex-1">
+          <Home />
+        </View>
+      ) : (
+        <Offline />
+      )}
     </View>
   );
+
 };
 
 export default App;
