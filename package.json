@@ -1,0 +1,50 @@
+{
+  "name": "george.barbu.es",
+  "email": "george@barbu.es",
+  "url": "https:/george.barbu.es",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "android:native": "npx react-native run-android",
+    "android:expo:simulator": "set NODE_ENV=development&& npx kill-port 8081 && npx expo prebuild --platform android --clean && npx expo run:android && npx expo start --tunnel",
+    "android:eas:development": "set NODE_ENV=development&& npx expo prebuild --clean && eas build --platform android --profile development",
+    "android:eas:preview": "set NODE_ENV=production&& npx expo prebuild --clean && eas build --platform android --profile preview",
+    "android:eas:production": "set NODE_ENV=production&& npx expo prebuild --clean && eas build --platform android --profile production",
+    "android:eas:store": "set NODE_ENV=production&& npx eas submit --platform android --profile production",
+    "ios:native": "npx react-native run-ios",
+    "ios:expo:simulator": "set NODE_ENV=development&&  npx kill-port 8081 && npx expo prebuild --platform ios --clean && cd ios && pod install && cd .. && npx expo run:ios && npx expo start --tunnel",
+    "ios:eas:development": "set NODE_ENV=development&& npx expo prebuild --clean && eas build --platform ios --profile development",
+    "ios:eas:preview": "set NODE_ENV=production&& npx expo prebuild --clean && eas build --platform ios --profile preview",
+    "ios:eas:production": "set NODE_ENV=production&& npx expo prebuild --clean && eas build --platform ios --profile production",
+    "ios:eas:store": "set NODE_ENV=production&& npx eas submit --platform android --profile production",
+    "android:expo:web": "expo start --web",
+    "web:expo:build": "npx expo export:web",
+    "expo:tunnel": "set NODE_ENV=development && npx expo start --tunnel",
+    "generate": "npx babel-node scripts/generate-pdf.js",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
+    "@expo/metro-runtime": "~3.1.3",
+    "@react-native-community/netinfo": "^11.4.1",
+    "autoprefixer": "^10.4.20",
+    "expo": "~50.0.6",
+    "expo-status-bar": "~1.11.1",
+    "nativewind": "^4.0.1",
+    "postcss": "^8.4.49",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-css-interop": "^0.1.22",
+    "react-native-reanimated": "~3.6.2",
+    "react-native-svg-transformer": "^1.5.0",
+    "react-native-web": "~0.19.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "tailwindcss": "^3.3.2"
+  },
+  "private": true
+}
