@@ -6,25 +6,25 @@ const Skills = ({ data }) => (
     {data.map((skill, index) => (
       <View
         key={index}
-        className="mt-10 text-white text-opacity-75  leading-4 font-thin"
+        className="mt-10 text-[0.85rem] font-['Lato'] text-opacity-75 leading-6 text-white"
       >
-        <Text className="uppercase font-norwester text-xl text-primary-light mb-4">
+        <Text className="uppercase font-Norwester text-xl text-primary-light mb-4">
           {skill.title}
         </Text>
-        <View className="text-[0.70rem] font-lato">
+        <View className="text-[0.85rem] font-['Lato'] text-opacity-75 leading-6 text-white">
           <View
             key={skill.title}
-            className={`${skill.type === "tag" ? "flex flex-wrap" : ""}`}
+            className={`${skill.type === "tag" ? "flex flex-wrap flex-row" : ""}`}
           >
             {skill.items.map((subskill, index) => (
               <Text key={subskill.name} className="mx-1">
                 {skill.type === "tag" && (
-                  <Text>
+                  <Text className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-3 text-white">
                     {subskill.name}
                     {skill.items.length - 1 !== index ? "," : ""}
                   </Text>
                 )}
-                {skill.type === "list" && <>- {subskill.name}</>}
+                {skill.type === "list" && <Text className="text-[0.70rem] font-['LatoThin'] text-opacity-75 leading-3 text-white">- {subskill.name}</Text>}
               </Text>
             ))}
           </View>

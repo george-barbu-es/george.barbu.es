@@ -1,48 +1,55 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React from 'react';
+import { View, Text, TouchableOpacity, Linking } from 'react-native';
 
 const Contact = ({ data, className }) => (
   <View className={className}>
-    <Text className="uppercase font-norwester text-xl text-primary-light mb-4">
+    <Text className="uppercase font-Norwester text-xl text-primary-light mb-4">
       {data.label}
     </Text>
-    <View className="text-[0.70rem] font-lato">
-      <ul>
+    <View className="text-[0.70rem] font-['LatoBlack']">
+      <View>
         {data && (
-          <>
+          <View>
             {data.items.map((contact, index) => (
-              <li className="py-2" key={index}>
-                {contact.service === "location" && <span>{contact.value}</span>}
-                {contact.service === "phone" && (
-                  <a href={`tel:${contact.value}`} title="phone">
-                    {contact.value}
-                  </a>
-                )}
-                {contact.service === "homephone" && (
-                  <a href={`tel:${contact.value}`} title="phone">
-                    {contact.value}
-                  </a>
-                )}
-                {contact.service === "website" && (
-                  <a
-                    target="_blank"
-                    href={contact.value}
-                    rel="noopener noreferrer"
-                    title="website"
+              <Text className="py-2" key={index}>
+                {contact.service === 'location' && <Text className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-6 text-white" >{contact.value}</Text>}
+                {contact.service === 'phone' && (
+                  <TouchableOpacity
+                    onPress={() => Linking.openURL(`tel:${contact.value}`)}
+                    className=" mr-1"
                   >
-                    {contact.value}
-                  </a>
+                    <Text className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-6 text-white" >{contact.value}</Text>
+                  </TouchableOpacity>
                 )}
-                {contact.service === "email" && (
-                  <a href={`mailto:${contact.value}`} title="email">
-                    {contact.value}
-                  </a>
+                {contact.service === 'homephone' && (
+                  <TouchableOpacity
+                    onPress={() => Linking.openURL(`tel:${contact.value}`)}
+                    className=" mr-1"
+                  >
+                    <Text className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-6 text-white" >{contact.value}</Text>
+                  </TouchableOpacity>
                 )}
-              </li>
+                {contact.service === 'website' && (
+                  <TouchableOpacity
+                    onPress={() => Linking.openURL(contact.value)}
+                    className=" mr-1"
+                  >
+                    <Text  className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-6 text-white" >{contact.value}</Text>
+                  </TouchableOpacity>
+                )}
+                {contact.service === 'email' && (
+                  <TouchableOpacity
+                    onPress={() => Linking.openURL(`mailto:${contact.value}`)}
+                    className=" mr-1"
+                  >
+                    <Text  className="text-[0.70rem] font-['Lato'] text-opacity-75 leading-4 text-white" >{contact.value}</Text>
+                  </TouchableOpacity>
+                )}
+              </Text>
             ))}
-          </>
+          </View>
         )}
-      </ul>
+      </View>
     </View>
   </View>
 );

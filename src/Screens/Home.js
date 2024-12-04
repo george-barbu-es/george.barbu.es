@@ -3,25 +3,20 @@ import { View, Text } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import DefaultTemplate from '@templates/default';
-import Header from '@components/header';
-
-//import { Footer, TopHeader, Sidebar, Education, Experience } from "@components";
-import Footer from '@components/footer';
+import {Header,  Footer, TopHeader, Sidebar, Education, Experience } from "@components";
 import resume from '@data/profile';
 
 export default function Home({ data }) {
-
 
   return (
     <DefaultTemplate>
         <Header />
 
-{/*
-      <View className="printColor max-w-screen-pdf relative mx-auto lg:flex">
+      <View className="printColor max-w-screen-pdf relative mx-auto lg:flex lg:flex-row">
         <TopHeader data={{ text: resume.header }} />
         <View className="bg-gray px-8 lg:w-2/5">
-          <Sidebar
-            className="mt-5 pb-10 pt-16 print:pt-56 sm:pt-56"
+         <Sidebar
+            className="pb-10 pt-10 print:pt-56 sm:pt-56"
             skills={resume.skills}
             summary={resume.summary}
             contacts={resume.contact}
@@ -40,7 +35,7 @@ export default function Home({ data }) {
             />
           </View>
         </View>
-      </View> */}
+      </View>
 
       <Footer social={resume.social} />
     </DefaultTemplate>
