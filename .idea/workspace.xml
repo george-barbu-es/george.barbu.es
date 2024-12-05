@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="">
+    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- WEB Version - FIX">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,19 @@
       <option name="presentableId" value="Default" />
       <updated>1732989790515</updated>
     </task>
+    <task id="LOCAL-00001" summary="- WEB Version - FIX">
+      <option name="closed" value="true" />
+      <created>1733433976310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733433976310</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- WEB Version - FIX" />
+    <option name="LAST_COMMIT_MESSAGE" value="- WEB Version - FIX" />
   </component>
 </project>

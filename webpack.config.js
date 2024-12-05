@@ -1,7 +1,11 @@
-const { withExpo } = require('@expo/webpack-config');
-const path = require('path');
+module.exports = async function (env, argv) {
+  const config = await createExpoWebpackConfigAsync(env, argv);
 
-module.exports = function (env, argv) {
+  config.module.rules.push({
+    test: /\.css$/,
+    use: ['style-loader', 'css-loader'],
+    include: /react-native-css-interop/,
+  });
 
- config;
+  return config;
 };
