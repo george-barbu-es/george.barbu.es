@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const { defaultTheme  } = require('tailwindcss/defaultTheme');
+import { platformSelect } from "nativewind/theme";
 
 module.exports = {
   mode: 'jit',
@@ -14,6 +16,7 @@ module.exports = {
   presets: [require("nativewind/preset")],
   theme: {
     screens: {
+      xs: "320px",
       sm: "640px",
       md: "768px",
       pdf: "816px",
@@ -32,10 +35,15 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "Helvetica", "Arial", "sans-serif"],
-        norwester: ["Norwester", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-        lato: ["Lato", "sans-serif"],
+          sans: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+          Norwester: ["Norwester", "sans-serif"],
+          Montserrat: ["Montserrat", "sans-serif"],
+          Lato: ["Lato", "sans-serif"],
+          system: platformSelect({
+            ios: "Lato",
+            android: "sans-serif",
+            default: "ui-sans-serif",
+          }),
       },
       screens: {
         print: { raw: "print" },
@@ -85,6 +93,7 @@ module.exports = {
   },
   variants: {
     // all the following default to ['responsive']
+    margin: ['responsive', 'hover', 'first'],
     orphans: ["responsive"],
     widows: ["responsive"],
     boxDecorationBreak: ["responsive"],
