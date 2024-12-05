@@ -1,3 +1,4 @@
+export { default as Header } from "./header";
 export { default as TopHeader } from "./top_header";
 export { default as Contact } from "./contact";
 export { default as Summary } from "./summary";

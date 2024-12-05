@@ -7,7 +7,7 @@ const DefaultTemplate = (props) => {
       <StatusBar barStyle="auto" />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        className="w-full text-gray bg-[#525659] min-h-screen"
+        className="w-full text-gray bg-[#525659]"
       >
         {props.children}
       </ScrollView>

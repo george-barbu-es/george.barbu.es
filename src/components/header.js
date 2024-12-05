@@ -22,7 +22,7 @@ export default function Header({}) {
   cssInterop(Icon, {
     className: {
       target: "style",
-      nativeStyleToProp: { size: true },
+      nativeStyleToProp: { size: true,  },
     },
   });
 
@@ -112,33 +112,34 @@ export default function Header({}) {
 
   return (
     <View
+      as="header"
       data-exclude="true"
-      className="max-w-screen-pdf relative flex-row mx-auto items-center justify-center text-center  pt-6 lg:pb-5 "
+      className="max-w-screen-pdf relative flex-row mx-auto items-center justify-center text-center pt-6 sm:pb-2 lg:pb-5 "
     >
-      <TouchableOpacity onPress={downloadPDF} className="mr-4">
+      <TouchableOpacity onPress={downloadPDF} className="mr-2">
         <Icon
           name="download"
           color="#313638"
-          className="text-[40px] md:!text-[25px]"
+          className="!text-[28px] mb-12 pb-1  sm:mb-0"
         />
       </TouchableOpacity>
 
       {isWEB && (
-        <TouchableOpacity onPress={printPDF} className="mr-4">
+        <TouchableOpacity onPress={printPDF} className="ml-2">
           <Icon
             name="printer"
             color="#313638"
-            className="text-[40px] md:!text-[25px]"
+            className="!text-[28px] mb-12 pb-1 sm:mb-0"
           />
         </TouchableOpacity>
       )}
 
       {!isWEB && (
-        <TouchableOpacity onPress={sharePDFmobile} className="mr-4">
+        <TouchableOpacity onPress={sharePDFmobile} className="ml-2">
           <Icon
             name="share-variant"
             color="#313638"
-            className="text-[40px] md:!text-[25px]"
+            className="!text-[28px] mb-12 pb-1 sm:mb-0"
           />
         </TouchableOpacity>
       )}
