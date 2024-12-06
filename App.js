@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
     const [fontsLoaded] = useFonts({
-        Norwester: require('@fonts/Norwester2/Norwester.otf'),
+        Norwester: require('@fonts/Norwester/Norwester.otf'),
         Montserrat: require('@fonts/Montserrat/Montserrat-Black.ttf'),
         MontserratLight: require('@fonts/Montserrat/Montserrat-Light.ttf'),
         MontserratSemiBold: require('@fonts/Montserrat/Montserrat-SemiBold.ttf'),

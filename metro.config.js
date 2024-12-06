@@ -19,4 +19,4 @@ config.resolver.extraNodeModules = {
     'text-encoding-polyfill': require.resolve('text-encoding-polyfill'),
 };
 
-module.exports = withNativeWind(config, { input: './styles.css' });
+module.exports = withNativeWind(config, { input: './src/styles/styles.css' });

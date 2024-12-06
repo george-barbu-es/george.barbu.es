@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Linking } from 'react-native';
 import { cssInterop } from 'nativewind';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import { OpenURLButton } from '@utility/functions';
+import { OpenURLButton } from '@utils/functions';
 
 const Footer = ({ social }) => {
 

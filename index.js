@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo';
-import './styles.css';
+import './src/styles/styles.css';
 import 'text-encoding-polyfill';
 import App from './App';
 
