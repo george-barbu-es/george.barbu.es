@@ -39,6 +39,7 @@
     "web": {
       "output": "static",
       "bundler": "metro",
+      "assetPrefix": "./",
       "build": {
         "babel": {
           "preset": ["expo"],
