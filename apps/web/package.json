@@ -1,0 +1,68 @@
+{
+  "name": "@george-barbu-es/web",
+  "private": true,
+  "description": "George Barbu CV",
+  "version": "1.3.5",
+  "license": "MIT",
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "gatsby develop",
+    "develop": "npm run start && npm run format",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "generate": "npx babel-node scripts/generate-pdf.js",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@george-barbu-es/shared": "file:../shared",
+    "@fontsource/lato": "^4.5.10",
+    "@fontsource/montserrat": "^4.5.14",
+    "@fontsource/norwester": "^4.5.4",
+    "buffer": "^6.0.3",
+    "decap-cms-app": "^3.4.0",
+    "fs": "^0.0.1-security",
+    "gatsby": "^5.12.1",
+    "graphql": "^16.9.0",
+    "process": "^0.11.10",
+    "prop-types": "^15.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-helmet": "^6.1.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.11",
+    "@babel/node": "^7.22.10",
+    "ajv": "^8.17.1",
+    "gatsby-plugin-decap-cms": "^4.0.4",
+    "gatsby-plugin-gatsby-cloud": "^5.12.0",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-offline": "^6.12.0",
+    "gatsby-plugin-postcss": "^6.12.0",
+    "gatsby-plugin-purgecss": "^6.2.1",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sharp": "^5.12.0",
+    "gatsby-plugin-sitemap": "^6.12.0",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.31",
+    "gatsby-source-cloudinary": "^0.5.1",
+    "gatsby-source-filesystem": "^5.12.0",
+    "gatsby-transformer-cloudinary": "^4.5.0",
+    "gatsby-transformer-json": "^5.12.0",
+    "prettier": "^2.8.8",
+    "puppeteer": "^19.11.1",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-break": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/george.barbu.cc/resume"
+  },
+  "bugs": {
+    "url": "https://github.com/george.barbu.cc/resume/issues"
+  }
+}
