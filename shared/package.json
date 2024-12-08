@@ -4,13 +4,9 @@
   "main": "dist/index.js",
   "private": true,
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint src",
-    "test": "jest"
   },
   "dependencies": {
   },
   "devDependencies": {
-    "eslint": "^8.x"
   }
 }
