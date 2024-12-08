@@ -4,191 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- PDF Generation FIX">
-      <change afterPath="$PROJECT_DIR$/apps/mobile/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mobile/src/utils/netinfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/.npmrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/data/profile.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/gatsby-browser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/gatsby-config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/gatsby-node.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/public/admin/cms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/public/admin/cms.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/public/admin/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/public/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/scripts/generate-pdf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/angellist.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/behance.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/bolt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/calendar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/cc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/download.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/dribbble.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/globe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/heart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/linkedin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/location.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/mail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/print.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/site-icon.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/skype.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/telegram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/assets/youtube.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/AddToHomeScreen .js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/education.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/experience.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/seo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/skills.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/social_icon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/summary.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/components/top_header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/pages/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/src/pages/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/static/admin/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/static/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/static/assets/profile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/web/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/utils/helper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- Step 1: Merge React Native with GatsbyJS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/debug.keystore" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/debug.keystore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/george/barbu/es/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/java/george/barbu/es/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/java/george/barbu/es/MainApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/java/george/barbu/es/MainApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable-hdpi/splashscreen_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable-mdpi/splashscreen_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable-xhdpi/splashscreen_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable-xxhdpi/splashscreen_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable-xxxhdpi/splashscreen_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/drawable/rn_edit_text_material.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/drawable/rn_edit_text_material.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values-night/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/values-night/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/profile.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/data/profile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eas.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/eas.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metro.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/metro.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generate-pdf.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/scripts/generate-pdf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/Screens/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screens/Offline.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/Screens/Offline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/app/_layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/app/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/adaptive-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/adaptive-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-BlackItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Lato/Lato-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Lato/Lato-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Black.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-BlackItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-ExtraLight.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Light.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-LightItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Medium.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-MediumItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-Thin.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Norwester/Norwester.otf" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/fonts/Norwester/Norwester.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/splash-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/assets/splash-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddToHomeScreen .js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/AddToHomeScreen .js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/contact.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/education.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/education.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/experience.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/experience.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/summary.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/summary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/top_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/components/top_header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/templates/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/.npmrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/netinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/utility/netinfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/utility/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/utils/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/netinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/src/utils/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mobile/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/static/admin/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/static/admin/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +24,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "barbugeorgedev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/george-barbu-es/george.barbu.es.git",
+    "accountId": "325ff1ea-c9e0-49f9-84bd-eb195fa54c02"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -265,13 +95,22 @@
       <option name="project" value="LOCAL" />
       <updated>1733523578018</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Step 1: Merge React Native with GatsbyJS">
+      <option name="closed" value="true" />
+      <created>1733672951439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733672951439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- WEB Version - FIX" />
     <MESSAGE value="- Android version, Web Version, Static Web Version with Metro" />
     <MESSAGE value="- PDF Generation FIX" />
-    <option name="LAST_COMMIT_MESSAGE" value="- PDF Generation FIX" />
+    <MESSAGE value="- Step 1: Merge React Native with GatsbyJS" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Step 1: Merge React Native with GatsbyJS" />
   </component>
 </project>
