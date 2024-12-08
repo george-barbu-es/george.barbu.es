@@ -56,13 +56,13 @@
     "prettier": "^2.8.8",
     "puppeteer": "^19.11.1",
     "tailwindcss": "^3.3.3",
-    "tailwindcss-break": "^0.1.0"
+    "tailwindcss-break": "^1.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/george.barbu.cc/resume"
+    "url": "https://github.com/george.barbu.es/george.barbu.es"
   },
   "bugs": {
-    "url": "https://github.com/george.barbu.cc/resume/issues"
+    "url": "https://github.com/george.barbu.es/george.barbu.es/issues"
   }
 }
