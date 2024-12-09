@@ -1,4 +1,4 @@
-import { DecapCmsApp } from 'decap-cms-app';
+import DecapCmsApp from 'decap-cms-app';
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // React 18
 
