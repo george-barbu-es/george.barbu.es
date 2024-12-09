@@ -15,12 +15,13 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@george-barbu-es/shared": "file:../shared",
     "@fontsource/lato": "^4.5.10",
     "@fontsource/montserrat": "^4.5.14",
     "@fontsource/norwester": "^4.5.4",
+    "@george-barbu-es/shared": "file:../shared",
     "buffer": "^6.0.3",
     "decap-cms-app": "^3.4.0",
+    "dotenv": "^16.4.7",
     "fs": "^0.0.1-security",
     "gatsby": "^5.12.1",
     "graphql": "^16.9.0",
