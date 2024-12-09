@@ -324,14 +324,38 @@ const emitter = (0,mitt__WEBPACK_IMPORTED_MODULE_0__["default"])()
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! decap-cms-app */ "decap-cms-app");
 /* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(decap_cms_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ../../node_modules/gatsby/dist/utils/fast-refresh-module.js */ "../../node_modules/gatsby/dist/utils/fast-refresh-module.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ../../node_modules/react-refresh/runtime.js */ "../../node_modules/react-refresh/runtime.js");
 
 
 
-// Define your CMS config
+
+
+// Ensure the correct way of initializing CMS
+window.CMS = (decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default());
+
+// Configuration object
 const config = {
+  backend: {
+    name: 'git-gateway',
+    repo: 'george-barbu-es/george.barbu.es',
+    branch: 'master'
+  },
+  local_backend: true,
+  public_folder: '/assets',
+  media_folder: 'static/assets',
+  publish_mode: 'editorial_workflow',
+  display_url: 'Resume George Barbu',
+  site_url: 'https://george.barbu.es',
+  logo_url: 'https://george.barbu.es/assets/logo.png',
+  editor: {
+    preview: true
+  },
   collections: [{
     name: 'content',
     label: 'Content',
@@ -370,23 +394,79 @@ const config = {
           name: 'text',
           widget: 'text'
         }]
-      }
-      // More fields...
-      ]
+      }, {
+        label: 'Experience',
+        name: 'experience',
+        widget: 'list',
+        required: false,
+        fields: [{
+          label: 'Label',
+          name: 'label',
+          widget: 'string',
+          required: true
+        }, {
+          label: 'Items',
+          name: 'items',
+          widget: 'list',
+          fields: [{
+            label: 'Role',
+            name: 'role',
+            widget: 'string',
+            required: true
+          }, {
+            label: 'Company',
+            name: 'company',
+            widget: 'string',
+            required: true
+          }, {
+            label: 'Start date',
+            name: 'startDate',
+            widget: 'date',
+            format: 'YYYY',
+            required: true
+          }, {
+            label: 'End date',
+            name: 'endDate',
+            widget: 'date',
+            format: 'YYYY',
+            required: false
+          }, {
+            label: 'Present',
+            name: 'presentDate',
+            widget: 'select',
+            options: ['Yes', 'No'],
+            default: 'No',
+            required: true
+          }, {
+            label: 'Duties',
+            name: 'duties',
+            widget: 'list',
+            fields: [{
+              label: 'Duty',
+              name: 'duty',
+              widget: 'string'
+            }]
+          }]
+        }]
+      }]
     }]
   }]
 };
 
-// Optional: Register preview style (e.g., dark theme)
+// Optional: Custom widget registration (if needed)
+// CMS.registerWidget('file-relation', FileRelationWidget);
+
+// Register preview style
 decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default().registerPreviewStyle('/assets/dark-theme.css');
 
-// Initialize CMS when the DOM is loaded
-if (typeof window !== 'undefined') {
-  document.addEventListener('DOMContentLoaded', function () {
-    decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default().init({
-      config
-    });
-  });
+// Initialize CMS
+decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default().init({
+  config
+});
+
+// Optional: Handle any third-party cookie warnings
+if (window.chrome && window.chrome.loadTimes) {
+  console.log('Chrome is moving towards a new experience that allows users to browse without third-party cookies.');
 }
 
 var $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
@@ -1391,6 +1471,28 @@ if (false) {} else {
 
 "use strict";
 module.exports = DecapCmsApp;
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = React;
+
+/***/ }),
+
+/***/ "react-dom":
+/*!***************************!*\
+  !*** external "ReactDOM" ***!
+  \***************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = ReactDOM;
 
 /***/ }),
 
@@ -7203,7 +7305,7 @@ module.exports = path.URL;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "6d5c676721c42ac0aff0"; }
+/******/ 		__webpack_require__.h = function() { return "487f2afe6f1b08102078"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
