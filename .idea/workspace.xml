@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- fix npm error 404 Not Found - GET https://registry.npmjs.org/tailwindcss-break/-/tailwindcss-break-0.1.0.tgz - Not found">
-      <change afterPath="$PROJECT_DIR$/apps/web/netlify.toml" afterDir="false" />
+    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- remove netlify deploy file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +121,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733683447279</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- fix netlify web deploy">
+      <option name="closed" value="true" />
+      <created>1733737921951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733737921951</updated>
+    </task>
+    <task id="LOCAL-00007" summary="- remove netlify deploy file">
+      <option name="closed" value="true" />
+      <created>1733738116614</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733738116614</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +147,8 @@
     <MESSAGE value="- Step 1: Merge React Native with GatsbyJS" />
     <MESSAGE value="- fix The package '@humanwhocodes/object-schema' version 2.0.3 is not found in the npm registry." />
     <MESSAGE value="- fix npm error 404 Not Found - GET https://registry.npmjs.org/tailwindcss-break/-/tailwindcss-break-0.1.0.tgz - Not found" />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix npm error 404 Not Found - GET https://registry.npmjs.org/tailwindcss-break/-/tailwindcss-break-0.1.0.tgz - Not found" />
+    <MESSAGE value="- fix netlify web deploy" />
+    <MESSAGE value="- remove netlify deploy file" />
+    <option name="LAST_COMMIT_MESSAGE" value="- remove netlify deploy file" />
   </component>
 </project>
