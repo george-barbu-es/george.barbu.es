@@ -1,8 +1,4 @@
 import CMS from 'decap-cms-app';
-import { Widget as FileRelationWidget } from '@cms/widgets/file-relation';
-
-// Import any custom preview templates if needed
-// import BlogPostPreview from './preview-templates/blog-post-preview';
 
 // If you want to add preview styles
 CMS.registerPreviewStyle('/assets/styles.css');
