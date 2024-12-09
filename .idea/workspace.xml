@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- reinit the CMS">
+    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- add logs to CMS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/web/src/cms/cms.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/cms/cms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/static/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/static/admin/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733746619292</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="- add logs to CMS">
+      <option name="closed" value="true" />
+      <created>1733747096959</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733747096959</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,6 +216,7 @@
     <MESSAGE value="- Style Admin" />
     <MESSAGE value="- remove widgets from admin" />
     <MESSAGE value="- reinit the CMS" />
-    <option name="LAST_COMMIT_MESSAGE" value="- reinit the CMS" />
+    <MESSAGE value="- add logs to CMS" />
+    <option name="LAST_COMMIT_MESSAGE" value="- add logs to CMS" />
   </component>
 </project>
