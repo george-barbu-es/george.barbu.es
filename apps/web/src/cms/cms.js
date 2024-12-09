@@ -1,27 +1,7 @@
 import DecapCmsApp from 'decap-cms-app';
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // React 18
-
-// Ensure DecapCmsApp is available globally (optional)
-window.DecapCmsApp = DecapCmsApp;
 
 // Define your CMS config
 const config = {
-  backend: {
-    name: 'git-gateway',
-    repo: 'george-barbu-es/george.barbu.es',
-    branch: 'master',
-  },
-  local_backend: true,
-  public_folder: '/assets',
-  media_folder: 'static/assets',
-  publish_mode: 'editorial_workflow',
-  display_url: 'Resume George Barbu',
-  site_url: 'https://george.barbu.es',
-  logo_url: 'https://george.barbu.es/assets/logo.png',
-  editor: {
-    preview: true,
-  },
   collections: [
     {
       name: 'content',

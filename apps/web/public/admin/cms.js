@@ -329,123 +329,65 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ../../node_modules/react-refresh/runtime.js */ "../../node_modules/react-refresh/runtime.js");
 
 
-decap_cms_app__WEBPACK_IMPORTED_MODULE_0__.DecapCmsApp.init({
-  config: {
-    backend: {
-      name: 'git-gateway',
-      repo: 'george-barbu-es/george.barbu.es',
-      // Replace with your repo
-      branch: 'master'
-    },
-    local_backend: true,
-    public_folder: '/assets',
-    media_folder: 'static/assets',
-    publish_mode: 'editorial_workflow',
-    display_url: 'Resume George Barbu',
-    site_url: 'https://george.barbu.es',
-    logo_url: 'https://george.barbu.es/assets/logo.png',
-    editor: {
-      preview: true
-    },
-    collections: [{
-      name: 'content',
-      label: 'Content',
-      files: [{
-        label: 'Resume',
-        name: 'resume',
-        file: 'data/profile.json',
+
+// Define your CMS config
+const config = {
+  collections: [{
+    name: 'content',
+    label: 'Content',
+    files: [{
+      label: 'Resume',
+      name: 'resume',
+      file: 'data/profile.json',
+      fields: [{
+        label: 'Header',
+        name: 'header',
+        widget: 'object',
+        required: true,
         fields: [{
-          label: 'Header',
-          name: 'header',
-          widget: 'object',
-          required: true,
-          fields: [{
-            label: 'Full Name',
-            name: 'fullname',
-            widget: 'string'
-          }, {
-            label: 'Role',
-            name: 'role',
-            widget: 'string'
-          }, {
-            label: 'Slogan',
-            name: 'slogan',
-            widget: 'string'
-          }]
+          label: 'Full Name',
+          name: 'fullname',
+          widget: 'string'
         }, {
-          label: 'PERSONAL PROFILE',
-          name: 'summary',
-          widget: 'object',
-          fields: [{
-            label: 'Label',
-            name: 'label',
-            widget: 'string'
-          }, {
-            label: 'Text',
-            name: 'text',
-            widget: 'text'
-          }]
+          label: 'Role',
+          name: 'role',
+          widget: 'string'
         }, {
-          label: 'Experience',
-          name: 'experience',
-          widget: 'list',
-          required: false,
-          fields: [{
-            label: 'Label',
-            name: 'label',
-            widget: 'string',
-            required: true
-          }, {
-            label: 'Items',
-            name: 'items',
-            widget: 'list',
-            fields: [{
-              label: 'Role',
-              name: 'role',
-              widget: 'string',
-              required: true
-            }, {
-              label: 'Company',
-              name: 'company',
-              widget: 'string',
-              required: true
-            }, {
-              label: 'Start date',
-              name: 'startDate',
-              widget: 'date',
-              format: 'YYYY',
-              required: true
-            }, {
-              label: 'End date',
-              name: 'endDate',
-              widget: 'date',
-              format: 'YYYY',
-              required: false
-            }, {
-              label: 'Present',
-              name: 'presentDate',
-              widget: 'select',
-              options: ['Yes', 'No'],
-              default: 'No',
-              required: true
-            }, {
-              label: 'Duties',
-              name: 'duties',
-              widget: 'list',
-              fields: [{
-                label: 'Duty',
-                name: 'duty',
-                widget: 'string'
-              }]
-            }]
-          }]
-        }
-        // Additional fields here (Skills, Contact, Education, Footer)
-        ]
-      }]
+          label: 'Slogan',
+          name: 'slogan',
+          widget: 'string'
+        }]
+      }, {
+        label: 'PERSONAL PROFILE',
+        name: 'summary',
+        widget: 'object',
+        fields: [{
+          label: 'Label',
+          name: 'label',
+          widget: 'string'
+        }, {
+          label: 'Text',
+          name: 'text',
+          widget: 'text'
+        }]
+      }
+      // More fields...
+      ]
     }]
-  }
-});
+  }]
+};
+
+// Optional: Register preview style (e.g., dark theme)
+decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default().registerPreviewStyle('/assets/dark-theme.css');
+
+// Initialize CMS when the DOM is loaded
+if (typeof window !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', function () {
+    decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default().init({
+      config
+    });
+  });
+}
 
 var $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
 var $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
@@ -575,9 +517,9 @@ window.___loader = {
  * Load Decap CMS automatically if `window.CMS_MANUAL_INIT` is set.
  */
 // eslint-disable-next-line no-undef
-if (true) {
-  _decapCmsApp.default.init();
-} else {}
+if (false) {} else {
+  console.log("`CMS_MANUAL_INIT` flag set, skipping automatic initialization.'");
+}
 
 /**
  * The stylesheet output from the modules at `modulePath` will be at `cms.css`.
@@ -7261,7 +7203,7 @@ module.exports = path.URL;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "c277f6ec65bff00389bb"; }
+/******/ 		__webpack_require__.h = function() { return "2104743eecd871d6e812"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
