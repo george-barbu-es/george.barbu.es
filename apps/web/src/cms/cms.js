@@ -1,10 +1,21 @@
-import { DecapCmsApp } from 'decap-cms-app';
+import CMS from 'decap-cms-app';
+import { Widget as FileRelationWidget } from '@cms/widgets/file-relation';
 
-DecapCmsApp.init({
+// Import any custom preview templates if needed
+// import BlogPostPreview from './preview-templates/blog-post-preview';
+
+// Configure any custom widgets
+CMS.registerWidget('file-relation', FileRelationWidget);
+
+// If you want to add preview styles
+CMS.registerPreviewStyle('/assets/styles.css');
+
+// Configure the CMS
+CMS.init({
   config: {
     backend: {
       name: 'git-gateway',
-      repo: 'george-barbu-es/george.barbu.es', // Replace with your repo
+      repo: 'george-barbu-es/george.barbu.es',
       branch: 'master',
     },
     local_backend: true,
@@ -74,7 +85,7 @@ DecapCmsApp.init({
                   },
                 ],
               },
-              // Additional fields here (Skills, Contact, Education, Footer)
+              // Additional collections/fields can be added here
             ],
           },
         ],
@@ -82,3 +93,5 @@ DecapCmsApp.init({
     ],
   },
 });
+
+// Optional: Add any custom routes or additional CMS configurations

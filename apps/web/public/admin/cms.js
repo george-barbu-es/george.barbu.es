@@ -314,6 +314,172 @@ const emitter = (0,mitt__WEBPACK_IMPORTED_MODULE_0__["default"])()
 
 /***/ }),
 
+/***/ "./src/cms/cms.js":
+/*!************************!*\
+  !*** ./src/cms/cms.js ***!
+  \************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! decap-cms-app */ "decap-cms-app");
+/* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(decap_cms_app__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
+/* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ../../node_modules/gatsby/dist/utils/fast-refresh-module.js */ "../../node_modules/gatsby/dist/utils/fast-refresh-module.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ../../node_modules/react-refresh/runtime.js */ "../../node_modules/react-refresh/runtime.js");
+
+
+decap_cms_app__WEBPACK_IMPORTED_MODULE_0__.DecapCmsApp.init({
+  config: {
+    backend: {
+      name: 'git-gateway',
+      repo: 'george-barbu-es/george.barbu.es',
+      // Replace with your repo
+      branch: 'master'
+    },
+    local_backend: true,
+    public_folder: '/assets',
+    media_folder: 'static/assets',
+    publish_mode: 'editorial_workflow',
+    display_url: 'Resume George Barbu',
+    site_url: 'https://george.barbu.es',
+    logo_url: 'https://george.barbu.es/assets/logo.png',
+    editor: {
+      preview: true
+    },
+    collections: [{
+      name: 'content',
+      label: 'Content',
+      files: [{
+        label: 'Resume',
+        name: 'resume',
+        file: 'data/profile.json',
+        fields: [{
+          label: 'Header',
+          name: 'header',
+          widget: 'object',
+          required: true,
+          fields: [{
+            label: 'Full Name',
+            name: 'fullname',
+            widget: 'string'
+          }, {
+            label: 'Role',
+            name: 'role',
+            widget: 'string'
+          }, {
+            label: 'Slogan',
+            name: 'slogan',
+            widget: 'string'
+          }]
+        }, {
+          label: 'PERSONAL PROFILE',
+          name: 'summary',
+          widget: 'object',
+          fields: [{
+            label: 'Label',
+            name: 'label',
+            widget: 'string'
+          }, {
+            label: 'Text',
+            name: 'text',
+            widget: 'text'
+          }]
+        }, {
+          label: 'Experience',
+          name: 'experience',
+          widget: 'list',
+          required: false,
+          fields: [{
+            label: 'Label',
+            name: 'label',
+            widget: 'string',
+            required: true
+          }, {
+            label: 'Items',
+            name: 'items',
+            widget: 'list',
+            fields: [{
+              label: 'Role',
+              name: 'role',
+              widget: 'string',
+              required: true
+            }, {
+              label: 'Company',
+              name: 'company',
+              widget: 'string',
+              required: true
+            }, {
+              label: 'Start date',
+              name: 'startDate',
+              widget: 'date',
+              format: 'YYYY',
+              required: true
+            }, {
+              label: 'End date',
+              name: 'endDate',
+              widget: 'date',
+              format: 'YYYY',
+              required: false
+            }, {
+              label: 'Present',
+              name: 'presentDate',
+              widget: 'select',
+              options: ['Yes', 'No'],
+              default: 'No',
+              required: true
+            }, {
+              label: 'Duties',
+              name: 'duties',
+              widget: 'list',
+              fields: [{
+                label: 'Duty',
+                name: 'duty',
+                widget: 'string'
+              }]
+            }]
+          }]
+        }
+        // Additional fields here (Skills, Contact, Education, Footer)
+        ]
+      }]
+    }]
+  }
+});
+
+var $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;
+var $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(
+	$ReactRefreshModuleId$
+);
+
+function $ReactRefreshModuleRuntime$(exports) {
+	if (true) {
+		var errorOverlay;
+		if (typeof __react_refresh_error_overlay__ !== 'undefined') {
+			errorOverlay = __react_refresh_error_overlay__;
+		}
+		var testMode;
+		if (typeof __react_refresh_test__ !== 'undefined') {
+			testMode = __react_refresh_test__;
+		}
+		return __react_refresh_utils__.executeRuntime(
+			exports,
+			$ReactRefreshModuleId$,
+			module.hot,
+			errorOverlay,
+			testMode
+		);
+	}
+}
+
+if (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {
+	$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);
+} else {
+	$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);
+}
+
+/***/ }),
+
 /***/ "../../node_modules/gatsby-plugin-decap-cms/cms-identity.js":
 /*!******************************************************************!*\
   !*** ../../node_modules/gatsby-plugin-decap-cms/cms-identity.js ***!
@@ -7046,6 +7212,30 @@ module.exports = path.URL;
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
@@ -7071,7 +7261,7 @@ module.exports = path.URL;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "cc7b3a1da0e805ae4dca"; }
+/******/ 		__webpack_require__.h = function() { return "c277f6ec65bff00389bb"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -8230,7 +8420,8 @@ module.exports = path.URL;
 /******/ 	__webpack_require__("../../node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
 /******/ 	__webpack_require__("../../node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ErrorOverlayEntry.js");
 /******/ 	__webpack_require__("../../node_modules/gatsby-plugin-decap-cms/cms.js");
-/******/ 	var __webpack_exports__ = __webpack_require__("../../node_modules/gatsby-plugin-decap-cms/cms-identity.js");
+/******/ 	__webpack_require__("../../node_modules/gatsby-plugin-decap-cms/cms-identity.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/cms/cms.js");
 /******/ 	
 /******/ })()
 ;
