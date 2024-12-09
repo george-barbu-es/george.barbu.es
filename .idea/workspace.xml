@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- Style Admin">
+    <list default="true" id="a0f0c253-59ae-482e-a371-fa906d4fb0f2" name="Changes" comment="- remove widgets from admin">
+      <change afterPath="$PROJECT_DIR$/apps/web/static/assets/dark-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/web/src/cms/cms.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/src/cms/cms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/web/static/assets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/apps/web/static/assets/preview-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +161,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733745265638</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- remove widgets from admin">
+      <option name="closed" value="true" />
+      <created>1733745443252</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733745443252</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- remove widgets from admin">
+      <option name="closed" value="true" />
+      <created>1733745615339</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733745615339</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,6 +192,7 @@
     <MESSAGE value="fix admin for DecapCMS" />
     <MESSAGE value="fix admin path" />
     <MESSAGE value="- Style Admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Style Admin" />
+    <MESSAGE value="- remove widgets from admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="- remove widgets from admin" />
   </component>
 </project>
