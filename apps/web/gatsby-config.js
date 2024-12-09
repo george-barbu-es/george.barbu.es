@@ -61,6 +61,7 @@ module.exports = {
       htmlTitle: `Content Manager`,
       htmlFavicon: `static/assets/logo.png`,
       includeRobots: false,
+      manualInit: true,
       modulePath: `${__dirname}/src/cms/cms.js`, // Path to your CMS setup file
     },
   },
