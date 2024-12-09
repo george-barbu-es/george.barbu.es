@@ -1,4 +1,4 @@
-import DecapCmsApp from 'decap-cms-app';
+import CMS from 'decap-cms-app';
 
 // Define your CMS config
 const config = {
@@ -41,11 +41,11 @@ const config = {
 };
 
 // Optional: Register preview style (e.g., dark theme)
-DecapCmsApp.registerPreviewStyle('/assets/dark-theme.css');
+CMS.registerPreviewStyle('/assets/dark-theme.css');
 
 // Initialize CMS when the DOM is loaded
 if (typeof window !== 'undefined') {
   document.addEventListener('DOMContentLoaded', function () {
-    DecapCmsApp.init({ config });
+    CMS.init({ config });
   });
 }
