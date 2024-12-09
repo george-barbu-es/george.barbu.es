@@ -1,9 +1,12 @@
-import CMS from 'decap-cms-app';
+import { DecapCmsApp } from 'decap-cms-app';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Check if DecapCmsApp is imported correctly
+console.log(DecapCmsApp);
+
 // Ensure the correct way of initializing CMS
-window.CMS = CMS;
+window.DecapCmsApp = DecapCmsApp;
 
 // Configuration object
 const config = {
@@ -93,13 +96,17 @@ const config = {
   ],
 };
 
-// Optional: Custom widget registration (if needed)
-// CMS.registerWidget('file-relation', FileRelationWidget);
-
 // Register preview style
-CMS.registerPreviewStyle('/assets/dark-theme.css');
+DecapCmsApp.registerPreviewStyle('/assets/dark-theme.css');
 
-// Initialize CMS
+// Initialize CMS after DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function () {
-  CMS.init({ config });
+  console.log('Initializing Decap CMS...');
+  try {
+    DecapCmsApp.init({ config });
+    console.log('Decap CMS initialized successfully!');
+  } catch (error) {
+    console.error('Error initializing Decap CMS:', error);
+  }
 });
+
