@@ -100,4 +100,6 @@ const config = {
 CMS.registerPreviewStyle('/assets/dark-theme.css');
 
 // Initialize CMS
-CMS.init({ config });
+document.addEventListener('DOMContentLoaded', function () {
+  CMS.init({ config });
+});
