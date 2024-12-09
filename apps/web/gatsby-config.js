@@ -53,16 +53,17 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-decap-cms`,
-      options: {
-        enableIdentityWidget: true,
-        publicPath: `admin`,
-        htmlTitle: `Content Manager`,
-        htmlFavicon: `static/assets/logo.png`,
-        includeRobots: false,
-      },
+{
+    resolve: `gatsby-plugin-decap-cms`,
+    options: {
+      enableIdentityWidget: true,
+      publicPath: `admin`,
+      htmlTitle: `Content Manager`,
+      htmlFavicon: `static/assets/logo.png`,
+      includeRobots: false,
+      modulePath: `${__dirname}/src/cms/cms.js`, // Path to your CMS setup file
     },
+  },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
