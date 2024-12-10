@@ -1,4 +1,4 @@
-import "@fontsource/norwester";
+import 'tailwindcss/tailwind.css';
 
 window.Buffer = window.Buffer || require("buffer").Buffer
 

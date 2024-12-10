@@ -16,10 +16,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "@fontsource/lato": "^4.5.10",
     "@fontsource/montserrat": "^4.5.14",
     "@fontsource/norwester": "^4.5.4",
-    "@george-barbu-es/shared": "file:../shared",
+    "@george-barbu-es/shared": "1.0.0",
+    "babel-loader": "^9.2.1",
+    "babel-preset-gatsby": "^3.14.0",
     "buffer": "^6.0.3",
     "decap-cms-app": "^3.4.0",
     "dotenv": "^16.4.7",
@@ -28,11 +33,13 @@
     "gatsby": "^5.14.0",
     "gatsby-cli": "^5.14.0",
     "graphql": "^16.9.0",
+    "nativewind": "^2.0.11",
     "process": "^0.11.10",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
+    "react-native-web": "^0.19.13",
     "shelljs": "^0.8.5"
   },
   "devDependencies": {
@@ -62,6 +69,7 @@
     "gatsby-source-filesystem": "^5.12.0",
     "gatsby-transformer-cloudinary": "^4.5.0",
     "gatsby-transformer-json": "^5.12.0",
+    "postcss": "^8.4.24",
     "prettier": "^2.8.8",
     "puppeteer": "^19.11.1",
     "tailwindcss": "^3.3.3",

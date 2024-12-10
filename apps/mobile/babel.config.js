@@ -36,7 +36,7 @@ module.exports = function (api) {
             "@templates": "./src/templates",
             "@constants": "./src/utils/constants.js",
             "@shared":  "../../shared",
-            "@data": "../../../data",
+            "@data": "../../shared/data",
           },
         },
       ],

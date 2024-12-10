@@ -305,7 +305,7 @@ module.exports = Object.freeze({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var mitt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mitt */ "../../node_modules/mitt/dist/mitt.es.js");
+/* harmony import */ var mitt__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! mitt */ "../../node_modules/gatsby/node_modules/mitt/dist/mitt.es.js");
 
 
 const emitter = (0,mitt__WEBPACK_IMPORTED_MODULE_0__["default"])()
@@ -799,10 +799,10 @@ function handleRuntimeError(error) {
 
 /***/ }),
 
-/***/ "../../node_modules/mitt/dist/mitt.es.js":
-/*!***********************************************!*\
-  !*** ../../node_modules/mitt/dist/mitt.es.js ***!
-  \***********************************************/
+/***/ "../../node_modules/gatsby/node_modules/mitt/dist/mitt.es.js":
+/*!*******************************************************************!*\
+  !*** ../../node_modules/gatsby/node_modules/mitt/dist/mitt.es.js ***!
+  \*******************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7380,7 +7380,7 @@ module.exports = path.URL;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "05f4f67e8c8fd7866cd8"; }
+/******/ 		__webpack_require__.h = function() { return "1c10e47cc4403ae5889e"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

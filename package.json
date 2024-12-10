@@ -6,22 +6,15 @@
   "private": true,
   "type": "module",
   "workspaces": [
-    "apps/*",
-    "shared"
+    "apps/*"
   ],
   "scripts": {
-    "start:web": "npm run start -w apps/web",
-    "build:web": "npm run build -w apps/web",
-    "start:mobile": "npm run android:expo:simulator -w apps/mobile",
-    "format": "prettier --write ."
+    "start:web": "yarn workspace @george-barbu-es/web develop",
+    "build:web": "yarn workspace @george-barbu-es/web build",
+    "start:mobile": "yarn workspace @george-barbu-es/mobile android:expo:simulator"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.26.3",
-    "@babel/preset-typescript": "^7.26.0",
-    "prettier": "^3.1.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "lerna": "^6.6.2",
+    "yarn": "^1.22.19"
   }
 }

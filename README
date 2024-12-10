@@ -1,0 +1,37 @@
+Running the Projects
+Mobile App
+bash
+yarn mobile
+Web App
+bash
+yarn web
+Key Technologies
+
+React Native
+Gatsby
+NativeWind (Tailwind CSS for React Native)
+Monorepo with Yarn Workspaces
+
+Transpilation Approach
+
+Uses Babel to transpile React Native components for web
+NativeWind provides cross-platform styling
+Module resolver helps with imports across packages
+
+Configuration Notes
+
+metro.config.js handles React Native module resolution
+gatsby-config.js sets up transpilation for React Native modules
+Babel configs enable cross-platform component sharing
+
+Troubleshooting
+
+Ensure all dependencies are installed
+Check that Babel and module resolution configs are correct
+Verify React Native and React Native Web versions are compatible
+
+Adding New Shared Components
+
+Create components in apps/shared/src/components
+Export from apps/shared/src/index.js
+Import in mobile or web apps using @george-barbu-es/shared
