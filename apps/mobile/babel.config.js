@@ -25,7 +25,6 @@ module.exports = function (api) {
           ],
           alias: {
             "@src": "./src",
-            "@data": "./data",
             "@assets": "./src/assets",
             "@fonts": "./src/assets/fonts",
             "@api": "./src/api",
@@ -36,7 +35,8 @@ module.exports = function (api) {
             "@utils": "./src/utils",
             "@templates": "./src/templates",
             "@constants": "./src/utils/constants.js",
-             shared: '../../shared',
+            "@shared":  "../../shared",
+            "@data": "../../../data",
           },
         },
       ],

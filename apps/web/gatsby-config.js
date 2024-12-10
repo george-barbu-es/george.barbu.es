@@ -12,9 +12,9 @@ module.exports = {
   siteMetadata: {
     title: `George Barbu | FULLSTACK DEVELOPER`,
     author: `George Barbu`,
-    description: `With over 10 years of expertise in HTML, CSS, and JavaScript, 
-    I possess a strong passion for continuous learning. 
-    I consistently seek opportunities to enhance business value by collaborating 
+    description: `With over 10 years of expertise in HTML, CSS, and JavaScript,
+    I possess a strong passion for continuous learning.
+    I consistently seek opportunities to enhance business value by collaborating
     closely with various departments, including Product, Marketing, and BI.`,
     siteUrl: process.env.GATSBY_SITE_URL,
   },
@@ -42,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `${__dirname}/data/`,
+        path: `${__dirname}/../../data/`,
       },
     },
     {
@@ -101,7 +101,7 @@ module.exports = {
         apiKey: process.env.CLOUDINARY_API_KEY,
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
-        prefix: `george.barbu.cc/`,
+        prefix: `george.barbu.es/`,
         // type: `twitter`,
         // maxResults: 22,
         // tags: true,
@@ -125,8 +125,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://george.barbu.cc',
-        sitemap: 'https://george.barbu.cc/sitemap/sitemap-index.xml',
+        host: 'https://george.barbu.es',
+        sitemap: 'https://george.barbu.es/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

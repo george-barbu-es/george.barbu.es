@@ -8,7 +8,7 @@ import {
   Experience,
 } from '../components';
 import '../main.css';
-import resume from '../../data/profile';
+import resume from '@data/profile';
 
 import PrintIcon from '../assets/print.svg';
 import DownloadIcon from '../assets/download.svg';
@@ -17,7 +17,7 @@ import { graphql } from 'gatsby';
 
 export const query = graphql`
   query ProfileImage {
-    cloudinaryMedia(asset_id: {eq: "9cba289bb7130bb8a627a220567596ad"}) {
+    cloudinaryMedia(asset_id: {eq: "e0a3e82ccf1845f3e25d4f97f5eb803e"}) {
         gatsbyImageData(width: 720)
     }
   }
@@ -26,16 +26,16 @@ export const query = graphql`
 export default function Home({ data }) {
     // const documentRef = React.createRef();
     const downloadPDF = () => {
-        var element = document.createElement('a'); 
+        var element = document.createElement('a');
         element.setAttribute('href', process.env.GATSBY_PDF_EXPORT_PATH);
         element.setAttribute('download', 'george-barbu.pdf');
-    
+
         element.style.display = 'none';
         document.body.appendChild(element);
-        element.click(); 
+        element.click();
         document.body.removeChild(element);
-       
-    }   
+
+    }
     const printPDF = () => {
         if(!document.getElementById("resumePdfIframe")) {
             const resumeIframe = document.createElement("iframe");
@@ -44,15 +44,24 @@ export default function Home({ data }) {
             resumeIframe.setAttribute("name", "resumePdfIframe");
             resumeIframe.style.display = "none";
             document.body.appendChild(resumeIframe);
-        } 
-        
-        const resumePdfIframe = window.frames["resumePdfIframe"];
+        }
 
-        console.log(resumePdfIframe)
+        const resumePdfIframe = window.frames["resumePdfIframe"];
         resumePdfIframe.focus();
         resumePdfIframe.print();
-        document.body.removeChild(resumePdfIframe);
-    }  
+
+        setTimeout(() => {
+            const iframeElement = Array.from(document.getElementsByTagName('iframe')).find(
+                iframe => iframe.contentWindow === resumePdfIframe
+            );
+
+            if (iframeElement && iframeElement.parentNode) {
+                iframeElement.parentNode.removeChild(iframeElement);
+            } else {
+                console.error('Iframe element not found in the DOM.');
+            }
+        }, 5000);
+    }
 
     return (
         <main className="w-full text-gray bg-[#525659] min-h-screen">

@@ -13,5 +13,13 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         fs: false,
       },
     },
+    module: {
+      rules: [
+        {
+          test: /\.cjs$/,
+          type: 'javascript/auto',
+        },
+      ],
+    },
   })
 }

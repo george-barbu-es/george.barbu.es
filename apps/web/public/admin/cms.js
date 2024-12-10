@@ -324,15 +324,9 @@ const emitter = (0,mitt__WEBPACK_IMPORTED_MODULE_0__["default"])()
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! decap-cms-app */ "decap-cms-app");
 /* harmony import */ var decap_cms_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(decap_cms_app__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
 /* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "../../node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js");
 /* provided dependency */ var __react_refresh_error_overlay__ = __webpack_require__(/*! ../../node_modules/gatsby/dist/utils/fast-refresh-module.js */ "../../node_modules/gatsby/dist/utils/fast-refresh-module.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ../../node_modules/react-refresh/runtime.js */ "../../node_modules/react-refresh/runtime.js");
-
-
 
 
 
@@ -447,6 +441,109 @@ const config = {
               widget: 'string'
             }]
           }]
+        }]
+      }, {
+        label: 'Skills',
+        name: 'skills',
+        widget: 'list',
+        required: false,
+        fields: [{
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          required: true
+        }, {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          options: ['tag', 'list'],
+          required: true
+        }, {
+          label: 'Items',
+          name: 'items',
+          widget: 'list',
+          fields: [{
+            label: 'Name',
+            name: 'name',
+            widget: 'string',
+            required: true
+          }]
+        }]
+      }, {
+        label: 'Contact',
+        name: 'contact',
+        widget: 'object',
+        fields: [{
+          label: 'Label',
+          name: 'label',
+          widget: 'string',
+          required: false
+        }, {
+          label: 'Contacts',
+          name: 'items',
+          widget: 'list',
+          fields: [{
+            label: 'Service',
+            name: 'service',
+            widget: 'select',
+            options: ['location', 'homephone', 'phone', 'website', 'email', 'service']
+          }, {
+            label: 'Value',
+            name: 'value',
+            widget: 'string'
+          }]
+        }]
+      }, {
+        label: 'Education',
+        name: 'education',
+        widget: 'list',
+        required: false,
+        fields: [{
+          label: 'Label',
+          name: 'label',
+          widget: 'string',
+          required: true
+        }, {
+          label: 'Items',
+          name: 'items',
+          widget: 'list',
+          fields: [{
+            label: 'Institution',
+            name: 'institution',
+            widget: 'string'
+          }, {
+            label: 'Degree',
+            name: 'degree',
+            widget: 'string'
+          }, {
+            label: 'Type',
+            name: 'type',
+            widget: 'string'
+          }, {
+            label: 'Certifications',
+            name: 'certifications',
+            widget: 'list',
+            fields: [{
+              label: 'Name',
+              name: 'name',
+              widget: 'string'
+            }]
+          }]
+        }]
+      }, {
+        label: 'Footer',
+        name: 'social',
+        widget: 'list',
+        required: false,
+        fields: [{
+          label: 'Service',
+          name: 'service',
+          widget: 'select',
+          options: ['github', 'linkedin', 'twitter', 'facebook', 'youtube', 'instagram', 'behance', 'dribbble', 'angellist', 'cc']
+        }, {
+          label: 'URL',
+          name: 'url',
+          widget: 'string'
         }]
       }]
     }]
@@ -1471,28 +1568,6 @@ if (false) {} else {
 
 "use strict";
 module.exports = DecapCmsApp;
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = React;
-
-/***/ }),
-
-/***/ "react-dom":
-/*!***************************!*\
-  !*** external "ReactDOM" ***!
-  \***************************/
-/***/ (function(module) {
-
-"use strict";
-module.exports = ReactDOM;
 
 /***/ }),
 
@@ -7305,7 +7380,7 @@ module.exports = path.URL;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "487f2afe6f1b08102078"; }
+/******/ 		__webpack_require__.h = function() { return "05f4f67e8c8fd7866cd8"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
