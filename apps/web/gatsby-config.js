@@ -30,8 +30,6 @@ module.exports = {
         display: `standalone`,
         icon: 'src/assets/site-icon.jpg',
         icon_options: {
-          // For all the options available,
-          // please see the section "Additional Resources" below.
           purpose: `any maskable`,
         },
       },
@@ -53,31 +51,31 @@ module.exports = {
         },
       },
     },
-     {
-          resolve: 'gatsby-plugin-netlify',
-          options: {
-            headers: {
-              '/*': [
-                'X-XSS-Protection: 1; mode=block',
-                'X-Content-Type-Options: nosniff',
-                'Referrer-Policy: same-origin',
-                `Content-Security-Policy: frame-ancestors 'self' https://george.barbu.es`,
-              ],
-            },
-          },
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {
+        headers: {
+          '/*': [
+            'X-XSS-Protection: 1; mode=block',
+            'X-Content-Type-Options: nosniff',
+            'Referrer-Policy: same-origin',
+            `Content-Security-Policy: frame-ancestors 'self' https://george.barbu.es`,
+          ],
         },
-{
-    resolve: `gatsby-plugin-decap-cms`,
-    options: {
-      enableIdentityWidget: true,
-      publicPath: `admin`,
-      htmlTitle: `Content Manager`,
-      htmlFavicon: `static/assets/logo.png`,
-      includeRobots: false,
-      manualInit: true,
-      modulePath: `${__dirname}/src/cms/cms.js`, // Path to your CMS setup file
+      },
     },
-  },
+    {
+      resolve: `gatsby-plugin-decap-cms`,
+      options: {
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `Content Manager`,
+        htmlFavicon: `static/assets/logo.png`,
+        includeRobots: false,
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
@@ -94,27 +92,6 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-cloudinary`,
-      options: {
-        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
-        apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOUDINARY_API_SECRET,
-        resourceType: `image`,
-        prefix: `george.barbu.cc/`,
-        // type: `twitter`,
-        // maxResults: 22,
-        // tags: true,
-        // context: true,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-cloudinary`,
-      options: {
-        // Add the `gatsbyImageData` resolver to `CloudinaryMedia`
-        transformTypes: [`CloudinaryMedia`],
-      },
-    },
     `gatsby-plugin-image`,
     {
       resolve: 'gatsby-plugin-webpack-bundle-analyser-v2',
@@ -128,6 +105,15 @@ module.exports = {
         host: 'https://george.barbu.cc',
         sitemap: 'https://george.barbu.cc/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/img/`,
       },
     },
   ],

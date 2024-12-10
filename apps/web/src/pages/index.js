@@ -13,15 +13,7 @@ import resume from '../../data/profile';
 import PrintIcon from '../assets/print.svg';
 import DownloadIcon from '../assets/download.svg';
 
-import { graphql } from 'gatsby';
 
-export const query = graphql`
-  query ProfileImage {
-    cloudinaryMedia(asset_id: {eq: "9cba289bb7130bb8a627a220567596ad"}) {
-        gatsbyImageData(width: 720)
-    }
-  }
-`;
 
 export default function Home({ data }) {
     // const documentRef = React.createRef();
@@ -37,22 +29,32 @@ export default function Home({ data }) {
        
     }   
     const printPDF = () => {
-        if(!document.getElementById("resumePdfIframe")) {
-            const resumeIframe = document.createElement("iframe");
-            resumeIframe.setAttribute("src", process.env.GATSBY_PDF_EXPORT_PATH);
-            resumeIframe.setAttribute("id", "resumePdfIframe");
-            resumeIframe.setAttribute("name", "resumePdfIframe");
-            resumeIframe.style.display = "none";
-            document.body.appendChild(resumeIframe);
-        } 
-        
-        const resumePdfIframe = window.frames["resumePdfIframe"];
+            if(!document.getElementById("resumePdfIframe")) {
+                const resumeIframe = document.createElement("iframe");
+                resumeIframe.setAttribute("src", process.env.GATSBY_PDF_EXPORT_PATH);
+                resumeIframe.setAttribute("id", "resumePdfIframe");
+                resumeIframe.setAttribute("name", "resumePdfIframe");
+                resumeIframe.style.display = "none";
+                document.body.appendChild(resumeIframe);
+            }
 
-        console.log(resumePdfIframe)
-        resumePdfIframe.focus();
-        resumePdfIframe.print();
-        document.body.removeChild(resumePdfIframe);
-    }  
+            const resumePdfIframe = window.frames["resumePdfIframe"];
+            resumePdfIframe.focus();
+            resumePdfIframe.print();
+
+            setTimeout(() => {
+                const iframeElement = Array.from(document.getElementsByTagName('iframe')).find(
+                    iframe => iframe.contentWindow === resumePdfIframe
+                );
+
+                if (iframeElement && iframeElement.parentNode) {
+                    iframeElement.parentNode.removeChild(iframeElement);
+                } else {
+                    console.error('Iframe element not found in the DOM.');
+                }
+            }, 5000);
+        }
+
 
     return (
         <main className="w-full text-gray bg-[#525659] min-h-screen">
@@ -68,7 +70,7 @@ export default function Home({ data }) {
             </header>
 
             <div className="printColor max-w-screen-pdf relative mx-auto lg:flex">
-                <TopHeader data={{'text':resume.header, 'profileImage':data}} /> 
+                <TopHeader data={{'text':resume.header}} />
                 <div className="bg-gray px-8 lg:w-2/5">
                     <Sidebar  
                         className="mt-5 pb-10 pt-16 print:pt-56 sm:pt-56"

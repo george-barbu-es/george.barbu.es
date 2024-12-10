@@ -1,6 +1,4 @@
 import CMS from 'decap-cms-app';
-import React from 'react';
-import ReactDOM from 'react-dom';
 
 // Ensure the correct way of initializing CMS
 window.CMS = CMS;
@@ -74,7 +72,7 @@ const config = {
                       widget: 'select',
                       options: ['Yes', 'No'],
                       default: 'No',
-                      required: true
+                      required: true,
                     },
                     {
                       label: 'Duties',
@@ -84,6 +82,101 @@ const config = {
                     },
                   ],
                 },
+              ],
+            },
+            {
+              label: 'Skills',
+              name: 'skills',
+              widget: 'list',
+              required: false,
+              fields: [
+                { label: 'Title', name: 'title', widget: 'string', required: true },
+                {
+                  label: 'Type',
+                  name: 'type',
+                  widget: 'select',
+                  options: ['tag', 'list'],
+                  required: true,
+                },
+                {
+                  label: 'Items',
+                  name: 'items',
+                  widget: 'list',
+                  fields: [{ label: 'Name', name: 'name', widget: 'string', required: true }],
+                },
+              ],
+            },
+            {
+              label: 'Contact',
+              name: 'contact',
+              widget: 'object',
+              fields: [
+                { label: 'Label', name: 'label', widget: 'string', required: false },
+                {
+                  label: 'Contacts',
+                  name: 'items',
+                  widget: 'list',
+                  fields: [
+                    {
+                      label: 'Service',
+                      name: 'service',
+                      widget: 'select',
+                      options: ['location', 'homephone', 'phone', 'website', 'email', 'service'],
+                    },
+                    { label: 'Value', name: 'value', widget: 'string' },
+                  ],
+                },
+              ],
+            },
+            {
+              label: 'Education',
+              name: 'education',
+              widget: 'list',
+              required: false,
+              fields: [
+                { label: 'Label', name: 'label', widget: 'string', required: true },
+                {
+                  label: 'Items',
+                  name: 'items',
+                  widget: 'list',
+                  fields: [
+                    { label: 'Institution', name: 'institution', widget: 'string' },
+                    { label: 'Degree', name: 'degree', widget: 'string' },
+                    { label: 'Type', name: 'type', widget: 'string' },
+                    {
+                      label: 'Certifications',
+                      name: 'certifications',
+                      widget: 'list',
+                      fields: [{ label: 'Name', name: 'name', widget: 'string' }],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              label: 'Footer',
+              name: 'social',
+              widget: 'list',
+              required: false,
+              fields: [
+                {
+                  label: 'Service',
+                  name: 'service',
+                  widget: 'select',
+                  options: [
+                    'github',
+                    'linkedin',
+                    'twitter',
+                    'facebook',
+                    'youtube',
+                    'instagram',
+                    'behance',
+                    'dribbble',
+                    'angellist',
+                    'cc',
+                  ],
+                },
+                { label: 'URL', name: 'url', widget: 'string' },
               ],
             },
           ],
