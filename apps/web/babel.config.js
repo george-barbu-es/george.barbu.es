@@ -7,6 +7,7 @@ module.exports = function (api) {
       '@babel/preset-typescript',
     ],
     plugins: [
+      ['react-native-web', { commonjs: true }], // Wrap the plugin and options in an array
       '@babel/plugin-proposal-class-properties',
       [
         'module-resolver',

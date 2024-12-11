@@ -1,17 +1,17 @@
 {
   "name": "george-barbu-es",
-  "email": "george@barbu.es",
-  "url": "https:/george.barbu.es",
-  "version": "1.0.0",
   "private": true,
+  "version": "1.0.0",
+  "author": "George Barbu <george@barbu.es>",
+  "homepage": "https://george.barbu.es",
   "type": "module",
   "workspaces": [
     "apps/*"
   ],
   "scripts": {
-    "start:web": "yarn workspace @george-barbu-es/web develop",
-    "build:web": "yarn workspace @george-barbu-es/web build",
-    "start:mobile": "yarn workspace @george-barbu-es/mobile android:expo:simulator"
+    "start:web": "npm run develop --workspace @george-barbu-es/web",
+    "build:web": "npm run build --workspace @george-barbu-es/web",
+    "start:mobile": "npm run android:expo:simulator --workspace @george-barbu-es/mobile"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
